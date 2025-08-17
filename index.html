@@ -1,0 +1,658 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Yung FX Academy</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+
+  <!-- Floating Navbar -->
+  <nav class="fixed top-6 left-1/2 transform -translate-x-1/2 w-[90%] max-w-7xl z-50">
+    <div class="flex items-center justify-between bg-white/90 backdrop-blur-md rounded-2xl shadow-lg px-6 py-4 border border-gray-100">
+
+      <!-- Logo -->
+      <a href="#" class="flex items-center space-x-2">
+        <img src="assets/logo-white.png" alt="Yung FX Academy Logo" class="h-10 w-auto">
+        <span class="text-xl font-bold tracking-wide text-gray-900">Yung FX Academy</span>
+      </a>
+
+      <!-- Desktop Menu -->
+      <div class="hidden md:flex space-x-8 font-medium">
+        <a href="#" class="hover:text-indigo-600 transition">Home</a>
+        <a href="#pricing" class="hover:text-indigo-600 transition">Pricing</a>
+        <a href="login.html" class="hover:text-indigo-600 transition">Login</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition">Contact Us</a>
+      </div>
+
+      <!-- Mobile Menu Button -->
+      <button id="menu-btn" class="md:hidden flex items-center justify-center w-10 h-10 rounded-full bg-gray-100 hover:bg-gray-200 transition">
+        <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-gray-900" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+
+    <!-- Mobile Dropdown -->
+    <div id="mobile-menu" class="hidden md:hidden mt-2 bg-white/95 backdrop-blur-md rounded-2xl shadow-lg border border-gray-100">
+      <div class="flex flex-col p-4 space-y-4 font-medium">
+        <a href="#" class="hover:text-indigo-600 transition">Home</a>
+        <a href="#pricing" class="hover:text-indigo-600 transition">Pricng</a>
+        <a href="login.html" class="hover:text-indigo-600 transition">Login</a>
+        <a href="contact.html" class="hover:text-indigo-600 transition">Contact Us</a>
+      </div>
+    </div>
+  </nav>
+
+<!-- Hero Section -->
+<header class="relative pt-32 pb-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col lg:flex-row items-center gap-16">
+
+    <!-- Left: Text -->
+    <div class="flex-1 text-center lg:text-left">
+      <h1 class="text-5xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight text-gray-900">
+        The World’s <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600">#1 Trading Academy</span>
+      </h1>
+      <p class="mt-6 text-lg md:text-xl text-gray-600 max-w-2xl mx-auto lg:mx-0">
+        Welcome to <span class="font-semibold text-gray-900">Yung FX Academy</span> — where elite traders are built. 
+        Gain world-class education, instant funding opportunities, and rewards designed for the best.  
+      </p>
+
+      <!-- CTA Buttons -->
+      <div class="mt-8 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+        <a href="#pricing" class="px-8 py-4 rounded-2xl bg-indigo-600 text-white font-semibold shadow-lg hover:shadow-xl hover:bg-indigo-700 transition text-lg">
+          🚀 Join The Academy
+        </a>
+        <a href="login.html" class="px-8 py-4 rounded-2xl border border-gray-300 text-gray-900 font-semibold hover:border-indigo-600 hover:text-indigo-600 transition text-lg">
+          Login My Account
+        </a>
+      </div>
+    </div>
+
+    <!-- Right: Image -->
+    <div class="flex-1 relative">
+      <div class="relative">
+        <img src="assets/dashboard.png" 
+             alt="Elite Trading Visual" 
+             class="rounded-3xl shadow-2xl w-full">
+        <!-- Glow Effect -->
+        <div class="absolute inset-0 rounded-3xl bg-gradient-to-r from-indigo-500/30 via-purple-500/30 to-pink-500/30 blur-3xl -z-10"></div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+<!-- Credibility / Trust Badges Section -->
+<section class="py-20 bg-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <!-- Title -->
+    <h2 class="text-2xl md:text-3xl font-bold text-gray-900">
+      Trusted by Industry Leaders
+    </h2>
+    <p class="mt-3 text-gray-600 text-lg">
+      Yung FX Academy has been featured and recognized by top brokers, payment partners, and financial media worldwide.
+    </p>
+
+    <!-- Logos Row -->
+    <div class="mt-12 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-5 gap-8 items-center">
+      
+      <!-- Example Logos -->
+      <img src="https://upload.wikimedia.org/wikipedia/commons/1/16/%D0%9B%D0%BE%D0%B3%D0%BE%D1%82%D0%B8%D0%BF_TradingView.png" 
+           alt="TradingView" class="h-12 mx-auto opacity-70 hover:opacity-100 transition">
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/MQL5_Community_Logo.png" 
+           alt="MetaTrader" class="h-12 mx-auto opacity-70 hover:opacity-100 transition">
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a8/Paypal_Servise.jpg" 
+           alt="PayPal" class="h-10 mx-auto opacity-70 hover:opacity-100 transition">
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/Visa.svg" 
+           alt="Visa" class="h-10 mx-auto opacity-70 hover:opacity-100 transition">
+      
+      <img src="https://upload.wikimedia.org/wikipedia/commons/2/2a/Mastercard-logo.svg" 
+           alt="Mastercard" class="h-12 mx-auto opacity-70 hover:opacity-100 transition">
+
+    </div>
+  </div>
+</section>
+
+<!-- Core Benefits / Features Section -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <!-- Section Title -->
+    <h2 class="text-3xl md:text-4xl font-extrabold text-gray-900">
+      Why Choose <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Yung FX Academy</span>?
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+      We are not just another academy — we’re building the world’s most elite traders through unmatched education, funding, rewards, and community.
+    </p>
+
+    <!-- Grid -->
+    <div class="mt-16 grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
+
+      <!-- Card 1 -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition transform duration-300">
+        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-2xl font-bold">
+          🎓
+        </div>
+        <h3 class="mt-6 text-xl font-bold text-gray-900">World-Class Trading Education</h3>
+        <p class="mt-3 text-gray-600 text-sm">
+          Learn proven strategies, technical mastery, and trading psychology from industry experts with a global track record of success.
+        </p>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition transform duration-300">
+        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-green-500 to-emerald-600 text-white text-2xl font-bold">
+          💰
+        </div>
+        <h3 class="mt-6 text-xl font-bold text-gray-900">Instant Funding Opportunities</h3>
+        <p class="mt-3 text-gray-600 text-sm">
+          Get funded with capital instantly — no long evaluations. Trade confidently with world-class risk management support.
+        </p>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition transform duration-300">
+        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-pink-500 to-rose-600 text-white text-2xl font-bold">
+          🏆
+        </div>
+        <h3 class="mt-6 text-xl font-bold text-gray-900">Rewards & Certification</h3>
+        <p class="mt-3 text-gray-600 text-sm">
+          Earn certifications that prove your skill and gain access to exclusive rewards as you level up your trading career.
+        </p>
+      </div>
+
+      <!-- Card 4 -->
+      <div class="p-8 bg-white rounded-2xl shadow-lg border border-gray-100 hover:shadow-2xl hover:-translate-y-2 transition transform duration-300">
+        <div class="w-14 h-14 mx-auto flex items-center justify-center rounded-full bg-gradient-to-r from-blue-500 to-cyan-600 text-white text-2xl font-bold">
+          🌍
+        </div>
+        <h3 class="mt-6 text-xl font-bold text-gray-900">Global Trader Community</h3>
+        <p class="mt-3 text-gray-600 text-sm">
+          Connect, share, and grow with thousands of elite traders worldwide in a supportive and results-driven community.
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- About The Academy / Vision Section -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6 lg:px-12 grid lg:grid-cols-2 gap-16 items-center">
+
+    <!-- Left: Text Content -->
+    <div>
+      <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
+        Building the World’s <span class="text-transparent bg-clip-text bg-gradient-to-r from-indigo-600 to-purple-600">Most Elite Traders</span>
+      </h2>
+      <p class="mt-6 text-lg text-gray-600">
+        At <span class="font-semibold text-gray-900">Yung FX Academy</span>, our mission is clear: to create traders who are not only skilled but disciplined, visionary, and unstoppable.  
+        We combine cutting-edge education, instant funding opportunities, and an unrivaled global community to prepare you for success in the financial markets.
+      </p>
+
+      <!-- Founder Statement -->
+      <div class="mt-10 p-6 bg-gray-50 border border-gray-100 rounded-2xl shadow-sm">
+        <p class="text-gray-700 italic text-lg">
+          “Trading is more than charts and numbers — it’s discipline, psychology, and mastery.  
+          At Yung FX Academy, we don’t just teach trading, we build traders ready to dominate the global stage.”
+        </p>
+        <div class="mt-6 flex items-center space-x-4">
+          <img src="assets/ceo.png" alt="CEO Thabiso Pitseng" class="w-14 h-14 rounded-full shadow-md">
+          <div>
+            <p class="font-semibold text-gray-900">Thabiso Pitseng</p>
+            <p class="text-gray-600 text-sm">Founder & CEO, Yung FX Academy (Pty) Ltd</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Right: CEO Image -->
+    <div class="flex justify-center lg:justify-end">
+      <img src="assets/ceo.png" alt="Yung FX Academy CEO" class="rounded-3xl shadow-2xl max-w-sm w-full">
+    </div>
+
+  </div>
+</section>
+<!-- Pricing Section -->
+<section id="pricing" class="py-24 bg-white">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    
+    <!-- Title -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900">
+      Lifetime Access — One Elite Price
+    </h2>
+    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
+      Get everything you’ll ever need as a trader. One payment. Lifetime benefits. No hidden costs.
+    </p>
+
+    <!-- Pricing Card -->
+    <div class="mt-16 bg-white rounded-3xl shadow-2xl border border-gray-100 p-10 max-w-xl mx-auto">
+      <h3 class="text-2xl font-bold text-gray-900">All-Inclusive Elite Package</h3>
+      <p class="mt-2 text-gray-600">Lifetime Membership</p>
+
+      <!-- Price -->
+      <div class="mt-6 flex flex-col items-center">
+        <span class="text-5xl font-extrabold text-gray-900">$279</span>
+        <span class="text-gray-500 mt-1">≈ R4,900 ZAR</span>
+      </div>
+
+      <!-- Features List -->
+      <ul class="mt-8 space-y-4 text-gray-700 text-left">
+        <li class="flex items-start"><span class="text-indigo-600 font-bold mr-2">✔</span> Live Zoom & Interactive Sessions</li>
+        <li class="flex items-start"><span class="text-indigo-600 font-bold mr-2">✔</span> Full Professional Trading Course (Forex, Technicals, Fundamentals, Psychology)</li>
+        <li class="flex items-start"><span class="text-indigo-600 font-bold mr-2">✔</span> Instant Funding Opportunities</li>
+        <li class="flex items-start"><span class="text-indigo-600 font-bold mr-2">✔</span> Proprietary Trading Systems & Strategies</li>
+        <li class="flex items-start"><span class="text-indigo-600 font-bold mr-2">✔</span> Expert Advisors (EA’s) & Automated Robots</li>
+        <li class="flex items-start"><span class="text-indigo-600 font-bold mr-2">✔</span> Custom Templates & Trading Tools</li>
+        <li class="flex items-start"><span class="text-indigo-600 font-bold mr-2">✔</span> Certification & Rewards Program</li>
+        <li class="flex items-start"><span class="text-indigo-600 font-bold mr-2">✔</span> Lifetime Global Trader Community Access</li>
+      </ul>
+
+      <!-- CTA Button -->
+      <button id="openModal" class="mt-10 px-10 py-4 rounded-2xl bg-gradient-to-r from-indigo-600 to-purple-600 text-white text-lg font-semibold shadow-lg hover:shadow-2xl transition">
+        Pay & Join Now
+      </button>
+    </div>
+  </div>
+</section>
+
+
+<!-- Modal (Terms of Service + Payment) -->
+<div id="pricingModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative">
+    
+    <!-- Close Button -->
+    <button id="closeModal" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+      ✖
+    </button>
+
+    <!-- Title -->
+    <h3 class="text-2xl font-bold text-gray-900">Terms of Service</h3>
+    <p class="mt-4 text-gray-600 text-sm h-48 overflow-y-auto border rounded-lg p-4 bg-gray-50">
+      By enrolling in Yung FX Academy, you agree to our lifetime membership policy. All payments are final and non-refundable. 
+      Membership includes access to courses, live sessions, funding opportunities, and trading tools. Misuse, unauthorized sharing, 
+      or violation of our community standards will result in termination of access. By proceeding with payment, you acknowledge 
+      that you understand and agree to these terms.
+    </p>
+
+    <!-- Pay Button -->
+    <a href="https://pay.yoco.com/r/25dBPO" target="_blank"
+       class="mt-6 block w-full text-center px-6 py-4 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition">
+      💳 Pay & Join Now
+    </a>
+  </div>
+</div>
+
+<!-- Testimonials & Certifications Section -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Title -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 text-center">
+      What Our Students Achieve & Earn
+    </h2>
+    <p class="mt-4 text-gray-600 text-lg text-center max-w-2xl mx-auto">
+      From mastering trading skills to earning certifications, our students excel and get recognized worldwide.
+    </p>
+
+    <!-- Testimonials Grid -->
+    <div class="mt-16 grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+      
+      <!-- Testimonial 1 -->
+      <div class="bg-gray-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+        <p class="text-gray-700 italic">
+          "Yung FX Academy completely transformed my trading. I now trade confidently and successfully!"
+        </p>
+        <div class="mt-4 flex items-center space-x-4">
+          <img src="assets/logo-white.png" alt="Lesego Mogoboya" class="w-12 h-12 rounded-full shadow-sm">
+          <div>
+            <p class="font-semibold text-gray-900">Lesego Mogoboya</p>
+            <p class="text-gray-500 text-sm">Elite Trader Graduate</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 2 -->
+      <div class="bg-gray-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+        <p class="text-gray-700 italic">
+          "The instant funding and all the tools provided made me realize I could trade professionally immediately."
+        </p>
+        <div class="mt-4 flex items-center space-x-4">
+          <img src="assets/logo-white.png" alt="Naledi Ngwenya" class="w-12 h-12 rounded-full shadow-sm">
+          <div>
+            <p class="font-semibold text-gray-900">Naledi Ngwenya</p>
+            <p class="text-gray-500 text-sm">Elite Trader Graduate</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Testimonial 3 -->
+      <div class="bg-gray-50 p-6 rounded-2xl shadow-lg hover:shadow-2xl transition transform hover:-translate-y-2">
+        <p class="text-gray-700 italic">
+          "I finally have the confidence and knowledge to trade full-time thanks to Yung FX Academy."
+        </p>
+        <div class="mt-4 flex items-center space-x-4">
+          <img src="assets/logo-white.png" alt="Thabang Mhlengu" class="w-12 h-12 rounded-full shadow-sm">
+          <div>
+            <p class="font-semibold text-gray-900">Thabang Mhlengu</p>
+            <p class="text-gray-500 text-sm">Elite Trader Graduate</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Certifications Grid -->
+    <div class="mt-20">
+      <h3 class="text-3xl font-bold text-gray-900 text-center">Certified Students</h3>
+      <p class="mt-2 text-gray-600 text-center">Our graduates earn professional certifications that validate their elite trading skills.</p>
+
+      <div class="mt-12 grid gap-8 sm:grid-cols-2 md:grid-cols-3">
+        <!-- Certificate 1 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="assets/certificate-preview-1.jpg" alt="Lesego Mogoboya" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 text-center text-lg font-semibold">
+            Lesego Mogoboya
+          </div>
+        </div>
+
+        <!-- Certificate 2 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="assets/certificate-preview-2.jpg" alt="Naledi Ngwenya" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 text-center text-lg font-semibold">
+            Naledi Ngwenya
+          </div>
+        </div>
+
+        <!-- Certificate 3 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="assets/certificate-preview-3.jpg" alt="Thabang Mhlengu" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 text-center text-lg font-semibold">
+            Thabang Mhlengu
+          </div>
+        </div>
+
+        <!-- Certificate 4 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="assets/certificate-preview-4.jpg" alt="David Precious Kos" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 text-center text-lg font-semibold">
+            David Precious Kos
+          </div>
+        </div>
+
+        <!-- Certificate 5 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="assets/certificate-preview-5.jpg" alt="Sifiso Mufasa" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 text-center text-lg font-semibold">
+            Sifiso Mufasa
+          </div>
+        </div>
+
+        <!-- Certificate 6 -->
+        <div class="group relative rounded-2xl overflow-hidden shadow-lg hover:shadow-2xl transition">
+          <img src="assets/certificate-preview-6.jpg" alt="Anele Ramatheba" class="w-full h-64 object-cover transition-transform duration-300 group-hover:scale-105">
+          <div class="absolute bottom-0 left-0 right-0 bg-black/60 text-white p-4 text-center text-lg font-semibold">
+            Anele Ramatheba
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FAQ Section -->
+<section class="py-24 bg-white">
+  <div class="max-w-7xl mx-auto px-6">
+
+    <!-- Section Title -->
+    <h2 class="text-4xl md:text-5xl font-extrabold text-gray-900 text-center">
+      Frequently Asked Questions
+    </h2>
+    <p class="mt-4 text-gray-600 text-lg text-center max-w-2xl mx-auto">
+      Answers to common questions about Yung FX Academy, our courses, funding, and support.
+    </p>
+
+    <!-- FAQ Accordion -->
+    <div class="mt-16 space-y-4">
+      <!-- FAQ 1 -->
+      <div class="border border-gray-200 rounded-xl shadow-sm">
+        <button class="w-full px-6 py-4 text-left flex justify-between items-center text-gray-800 font-semibold focus:outline-none faq-toggle">
+          What is included in the Yung FX Academy lifetime membership?
+          <span class="faq-icon text-indigo-600 font-bold">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-6 py-0 text-gray-600">
+          Lifetime membership includes full trading courses, live sessions, funding opportunities, EA’s, templates, robots, and access to our global trader community.
+        </div>
+      </div>
+
+      <!-- FAQ 2 -->
+      <div class="border border-gray-200 rounded-xl shadow-sm">
+        <button class="w-full px-6 py-4 text-left flex justify-between items-center text-gray-800 font-semibold focus:outline-none faq-toggle">
+          How does instant funding work?
+          <span class="faq-icon text-indigo-600 font-bold">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-6 py-0 text-gray-600">
+          Once you complete your training and assessments, we provide you with funded capital to start trading. Funding comes with clearly defined rules and risk limits.
+        </div>
+      </div>
+
+      <!-- FAQ 3 -->
+      <div class="border border-gray-200 rounded-xl shadow-sm">
+        <button class="w-full px-6 py-4 text-left flex justify-between items-center text-gray-800 font-semibold focus:outline-none faq-toggle">
+          Can I access the courses on mobile?
+          <span class="faq-icon text-indigo-600 font-bold">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-6 py-0 text-gray-600">
+          Yes! All our courses and materials are fully responsive and can be accessed on desktop, tablet, or mobile devices.
+        </div>
+      </div>
+
+      <!-- FAQ 4 -->
+      <div class="border border-gray-200 rounded-xl shadow-sm">
+        <button class="w-full px-6 py-4 text-left flex justify-between items-center text-gray-800 font-semibold focus:outline-none faq-toggle">
+          What if I have questions during my course?
+          <span class="faq-icon text-indigo-600 font-bold">+</span>
+        </button>
+        <div class="faq-content max-h-0 overflow-hidden transition-all duration-500 px-6 py-0 text-gray-600">
+          You have full access to our support team and community. You can reach out anytime via email, WhatsApp, or our private community channels.
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Call To Action Section -->
+<section class="py-24 bg-gradient-to-r from-indigo-600 via-purple-600 to-pink-600 text-white">
+  <div class="max-w-7xl mx-auto px-6 text-center">
+
+    <!-- Headline -->
+    <h2 class="text-4xl md:text-5xl font-extrabold">
+      Join the World’s Most Elite Trading Academy Today
+    </h2>
+    <p class="mt-4 text-lg md:text-xl text-white/90 max-w-2xl mx-auto">
+      Access lifetime courses, funding, tools, EA’s, templates, and a global trader community — all in one exclusive package.
+    </p>
+
+    <!-- CTA Buttons -->
+    <div class="mt-10 flex flex-col sm:flex-row justify-center gap-6">
+      <button id="ctaModalBtn" class="px-10 py-4 rounded-2xl bg-white text-indigo-600 font-bold text-lg hover:shadow-2xl transition">
+        💳 Pay & Join Now
+      </button>
+      <a href="contact.html" class="px-10 py-4 rounded-2xl border border-white text-white font-semibold hover:bg-white hover:text-indigo-600 transition">
+        Contact Us
+      </a>
+    </div>
+
+  </div>
+</section>
+
+<!-- Modal (Terms + Payment) -->
+<div id="ctaModal" class="fixed inset-0 bg-black/70 hidden items-center justify-center z-50">
+  <div class="bg-white rounded-2xl shadow-2xl max-w-lg w-full p-8 relative">
+
+    <!-- Close Button -->
+    <button id="ctaClose" class="absolute top-4 right-4 text-gray-500 hover:text-gray-800">
+      ✖
+    </button>
+
+    <h3 class="text-2xl font-bold text-gray-900">Terms of Service</h3>
+    <p class="mt-4 text-gray-600 text-sm h-48 overflow-y-auto border rounded-lg p-4 bg-gray-50">
+      By enrolling in Yung FX Academy, you agree to our lifetime membership policy. All payments are final and non-refundable. 
+      Membership includes access to courses, live sessions, funding opportunities, and trading tools. Misuse, unauthorized sharing, 
+      or violation of our community standards will result in termination of access. By proceeding with payment, you acknowledge 
+      that you understand and agree to these terms.
+    </p>
+
+    <a href="https://pay.yoco.com/r/25dBPO" target="_blank"
+       class="mt-6 block w-full text-center px-6 py-4 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition">
+       💳 Pay & Join Now
+    </a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-white border-t border-gray-200 py-16">
+  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-12">
+
+    <!-- About -->
+    <div>
+      <img src="assets/logo-white.png" alt="Yung FX Academy Logo" class="h-10 mb-4">
+      <p class="text-gray-600 text-sm">
+        Yung FX Academy (Pty) Ltd is the world’s most elite trading academy.  
+        We empower traders with knowledge, funding, and cutting-edge tools to dominate global markets.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-gray-900 font-semibold mb-4">Quick Links</h4>
+      <ul class="space-y-2 text-gray-600">
+        <li><a href="login.html" class="hover:text-indigo-600 transition">Courses</a></li>
+        <li><a href="contact.html" class="hover:text-indigo-600 transition">Contact</a></li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-gray-900 font-semibold mb-4">Contact Us</h4>
+      <ul class="space-y-2 text-gray-600 text-sm">
+        <li>Phone/WhatsApp: <a href="tel:0694650250" class="hover:text-indigo-600 transition">0694650250</a></li>
+        <li>Email: <a href="mailto:helpdesk@yungfxacademy.online" class="hover:text-indigo-600 transition">helpdesk@yungfxacademy.online</a></li>
+        <li>Website: <a href="https://www.yungfxacademy.online" target="_blank" class="hover:text-indigo-600 transition">www.yungfxacademy.online</a></li>
+        <li>Registration No: K2024/274338/07</li>
+      </ul>
+    </div>
+
+    <!-- Social / Newsletter -->
+    <div>
+      <h4 class="text-gray-900 font-semibold mb-4">Connect with Us</h4>
+      <div class="flex space-x-4 mb-6">
+        <a href="https://youtube.com/@yungfxpablo" class="text-gray-600 hover:text-indigo-600 transition">🎥 YouTube</a>
+      </div>
+      <p class="text-gray-600 text-sm mb-2">Subscribe to our newsletter:</p>
+      <form class="flex flex-col sm:flex-row gap-2">
+        <input type="email" placeholder="Your email" class="flex-1 px-4 py-2 border border-gray-300 rounded-xl focus:outline-none focus:ring-2 focus:ring-indigo-600">
+        <button type="submit" class="px-6 py-2 rounded-xl bg-indigo-600 text-white font-semibold hover:bg-indigo-700 transition">Subscribe</button>
+      </form>
+    </div>
+
+  </div>
+
+  <!-- Bottom Copyright -->
+  <div class="mt-12 text-center text-gray-400 text-sm">
+    &copy; 2025 Yung FX Academy (Pty) Ltd. All rights reserved.
+  </div>
+</footer>
+
+<!-- Disclaimer Section -->
+<section class="bg-gray-50 py-8">
+  <div class="max-w-5xl mx-auto px-6 text-center">
+    <p class="text-gray-500 text-sm leading-relaxed">
+      ⚠️ Disclaimer: Trading forex and other financial instruments involves substantial risk of loss and is not suitable for every investor.  
+      Past performance is not indicative of future results. Yung FX Academy provides educational content, tools, and funding opportunities for learning purposes.  
+      You should carefully consider your financial situation and seek independent advice before trading. By enrolling in Yung FX Academy, you acknowledge and accept all risks involved in trading.
+    </p>
+  </div>
+</section>
+
+
+<!-- Modal Script -->
+<script>
+  const ctaBtn = document.getElementById("ctaModalBtn");
+  const ctaClose = document.getElementById("ctaClose");
+  const ctaModal = document.getElementById("ctaModal");
+
+  ctaBtn.addEventListener("click", () => {
+    ctaModal.classList.remove("hidden");
+    ctaModal.classList.add("flex");
+  });
+
+  ctaClose.addEventListener("click", () => {
+    ctaModal.classList.add("hidden");
+    ctaModal.classList.remove("flex");
+  });
+</script>
+
+<!-- FAQ Accordion Script -->
+<script>
+  const faqToggles = document.querySelectorAll('.faq-toggle');
+  faqToggles.forEach(toggle => {
+    toggle.addEventListener('click', () => {
+      const content = toggle.nextElementSibling;
+      const icon = toggle.querySelector('.faq-icon');
+      const isOpen = content.style.maxHeight && content.style.maxHeight !== '0px';
+
+      if (isOpen) {
+        content.style.maxHeight = '0px';
+        icon.textContent = '+';
+      } else {
+        // Close all other FAQs
+        document.querySelectorAll('.faq-content').forEach(c => c.style.maxHeight = '0px');
+        document.querySelectorAll('.faq-icon').forEach(i => i.textContent = '+');
+        // Open current FAQ
+        content.style.maxHeight = content.scrollHeight + 'px';
+        icon.textContent = '−';
+      }
+    });
+  });
+</script>
+
+<!-- Modal Script -->
+<script>
+  const openBtn = document.getElementById("openModal");
+  const closeBtn = document.getElementById("closeModal");
+  const modal = document.getElementById("pricingModal");
+
+  openBtn.addEventListener("click", () => {
+    modal.classList.remove("hidden");
+    modal.classList.add("flex");
+  });
+
+  closeBtn.addEventListener("click", () => {
+    modal.classList.add("hidden");
+    modal.classList.remove("flex");
+  });
+</script>
+
+
+  <script>
+    // Mobile Menu Toggle
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      mobileMenu.classList.toggle("hidden");
+    });
+  </script>
+
+</body>
+</html>
